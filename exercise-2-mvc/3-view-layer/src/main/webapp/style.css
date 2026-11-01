@@ -1,0 +1,18 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 16px;
+    color: #111;
+    line-height: 1.5;
+}
+h1 { font-size: 1.4rem; font-weight: 600; }
+h2 { font-size: 1.1rem; font-weight: 600; margin-top: 2rem; }
+a { color: inherit; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #ddd; }
+label { display: block; margin-top: 12px; }
+input, select, button { font: inherit; padding: 6px 8px; border: 1px solid #bbb; background: #fff; }
+button { cursor: pointer; }
+button:hover { background: #f2f2f2; }
+.muted { color: #666; }

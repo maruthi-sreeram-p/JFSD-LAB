@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapping Rules</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>URL mapping rules</h1>
+    <p>Click a link and see which servlet the container picked. The patterns are in <code>WEB-INF/web.xml</code>.</p>
+
+    <h2>Exact match <span class="muted">/home</span></h2>
+    <ul>
+        <li><a href="home">/home</a></li>
+        <li><a href="home/extra">/home/extra</a> - not exact, so it falls to the default servlet</li>
+    </ul>
+
+    <h2>Path match <span class="muted">/admin/*</span></h2>
+    <ul>
+        <li><a href="admin">/admin</a></li>
+        <li><a href="admin/users">/admin/users</a></li>
+        <li><a href="admin/users/42">/admin/users/42</a></li>
+    </ul>
+
+    <h2>Longest path wins <span class="muted">/admin/reports/*</span></h2>
+    <ul>
+        <li><a href="admin/reports/monthly">/admin/reports/monthly</a></li>
+    </ul>
+
+    <h2>Extension match <span class="muted">*.do</span></h2>
+    <ul>
+        <li><a href="login.do">/login.do</a></li>
+        <li><a href="admin/save.do">/admin/save.do</a> - path pattern is checked before the extension, so /admin/* wins</li>
+    </ul>
+
+    <h2>Default servlet <span class="muted">/</span></h2>
+    <ul>
+        <li><a href="nothing/matches/this">/nothing/matches/this</a></li>
+    </ul>
+</body>
+</html>

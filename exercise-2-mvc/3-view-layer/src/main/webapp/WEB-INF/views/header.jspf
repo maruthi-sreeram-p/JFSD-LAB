@@ -1,0 +1,9 @@
+<%@ page pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${pageTitle}</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css">
+</head>
+<body>
