@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Cookie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Add a cookie for the selected value</h1>
+    <form action="add-cookie" method="post">
+        <label>Favourite programming language
+            <select name="language">
+                <option>Java</option>
+                <option>Python</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+                <option>Go</option>
+            </select>
+        </label>
+        <p><button type="submit">Save in cookie</button></p>
+    </form>
+    <p class="muted"><a href="show-cookies">Show the saved cookie</a></p>
+</body>
+</html>

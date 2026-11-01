@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML and Servlet Communication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <p class="muted">This HTML form sends its data to <code>RegisterServlet</code>.</p>
+
+    <form action="register" method="post">
+        <label>Name
+            <input type="text" name="name" required>
+        </label>
+        <label>Email
+            <input type="email" name="email" required>
+        </label>
+        <label>Gender<br>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </label>
+        <label>Course
+            <select name="course">
+                <option>B.Tech CSE</option>
+                <option>B.Tech ECE</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+        </label>
+        <label>Interests<br>
+            <input type="checkbox" name="interest" value="Java"> Java
+            <input type="checkbox" name="interest" value="Web"> Web
+            <input type="checkbox" name="interest" value="Databases"> Databases
+        </label>
+        <p><button type="submit">Register</button></p>
+    </form>
+
+    <h2>Using GET</h2>
+    <form action="register" method="get">
+        <label>Name
+            <input type="text" name="name" required>
+        </label>
+        <p><button type="submit">Greet me</button></p>
+    </form>
+</body>
+</html>
