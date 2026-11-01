@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug DebugDemo",
+            "request": "launch",
+            "mainClass": "com.jfsd.debug.DebugDemo"
+        }
+    ]
+}
